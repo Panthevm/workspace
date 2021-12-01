@@ -1,0 +1,31 @@
+configuration {
+    display-drun: "Apps";
+    display-window: "Window";
+    show-icons:true;
+}
+ 
+* {
+    background-color: #22272e;
+    text-color: #aebbc8;
+    font: "Iosevka Term Medium Extended 16";
+}
+ 
+window {
+    padding: 15;
+    width: 20%;
+    height: 60%;
+}
+ 
+element.selected {
+    text-color: #f47067;
+}
+ 
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+ 
+#textbox-prompt-colon {
+    background-color: #00000000;
+    expand:     false;
+    str:        ": ";
+}
